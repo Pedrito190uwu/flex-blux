@@ -1,166 +1,335 @@
-body {
-    margin:0;
-    font-family: "Roboto Flex", sans-serif;
-    
-}
-header {
-  background-image: url("../assets/images/angel.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;  
-  width: 100%;      
-  display: flex;            
-  justify-content: center;    
-  align-items: center; 
-  
-}
-
-.titulo{
-  font-size: 200px; 
-  color: white; 
-  font-weight: 100px;
-}
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+    }
 
 
-.BTN {
-  background: #ff0057;
-  color: white;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 25px;
-  cursor: pointer;
-  margin-top: 15px;
+
+
+    nav {
+      background-color: #1c1033;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 80px;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .btn-download {
+     background-image: linear-gradient(to right, #9035b4, #2464da, #247df1);
+  	 height: 150%;
+      padding: 10px 25px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+
+
+   .hero {
+      display: flex;
+      height: 100vh; 
+    }
+
+    .hero-left {
+      flex: 1;
+      background-color: #1F1631;
+; 
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 80px;
+    }
+
+    .hero-left h1 {
+      font-size: 56px;
+      margin-bottom: 20px;
+    }
+
+    .hero-left p {
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .bordes {
+      border-radius: 5px;
+      padding: 5px;
+      margin-right: 404px;
+      border: #ffffff5e solid;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      background: #ffffff;
+      color: #e43f7c;
+      border: none;
+      padding: 14px 28px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn-outline {
+      border: 2px solid #fff;
+      background: transparent;
+      color: #fff;
+    }
+
+    .btn-outline:hover {
+      background: #fff;
+      color: #1c1033;
+    }
+
+    .hero-right {
+      flex: 1;
+      background-image: url("../assets/imagenes/hojasFondo.jpg"); 
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-right img {
+      max-width: 320px;
+    }
+
+
+
+
+  .features {
+  background: #f7f7fb;
+  padding: 60px 0;
+  text-align: center;
 }
 
-header h1 {
-    font-size: 50px;
-    text-align: center;
+.section-title {
+  font-size: 2.5rem;
+  color: #e43f7c;
+  margin-bottom: 50px;
 }
 
-.section {
+.pedddrito {
+  font-weight:50;
+  font-size: 30px;
+  color: #e43f7c ;
+}
+
+.feature-content {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: auto;
-}
-
-.sesio{
-    font-size: 40px;
-}
-
-.tex1{
-    font-size: 30px;
-    background: linear-gradient(45deg, #fd7a70 40px, #da0d51 50px);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-
-.text {
-  flex: 1;
-  padding: 260px;
-}
-
-.text1{
-  padding: 0 0 0 1000px;
-  
-}
-
-p{
-    line-height: 2.0;
-}
-
-.image {
-  flex: 1;
-  display: flex;
   justify-content: center;
+  gap: 50px;
+  text-align: left;
 }
 
-.image img {
-  max-width: 90%;
+.feature-img {
+  flex: 1;
+  text-align: center;
+}
+
+.feature-img img {
+  max-width: 100%;
   height: auto;
 }
 
-.section-revesa {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  flex-direction: row-reverse;
+.feature-text {
+  flex: 1;
 }
 
-
-.big-big {
-  background-image: url("../assets/images/raptis.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: row-reverse; 
-  align-items: center;         
-  justify-content: flex-start; 
-  padding: 80px;
-  height: 60vh;      
-  color: white;  
-}               
-
-.big-bg .duto {
-  max-width: 500px;
+.feature-text h3 {
+  font-size: 1.8rem;
+  color: #d63384;
+  margin-bottom: 15px;
 }
 
-.big-bg h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
+.feature-text p {
   margin-bottom: 20px;
+  color: #333;
 }
 
-.big-bg p {
+.feature-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-text li {
+  margin-bottom: 10px;
   font-size: 1rem;
-  margin-bottom: 20px;
-  line-height: 1.5;
+  color: #333;
 }
 
-.big-bg button {
-  background: #ff4f5a;
-  border: none;
-  padding: 12px 28px;
-  font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  color: white;
+.feature-text li::before {
+  content: "✔";
+  color: #e43f7c;
+  font-weight: bold;
+  margin-right: 8px;
 }
 
 
-footer{
-    background:linear-gradient(180deg,#ff3366,#e52e71); 
-    color:#fff; 
-    padding:40px 20px;
-    line-height: 7.0;
-}
-.footer-flex{
-    display:flex; 
-    justify-content:space-between; 
-    gap:20px; 
-    flex-wrap:wrap; 
-    max-width:1100px; 
-    margin:auto;
-}
-.footer strong{
-    display:block;
-     margin-bottom:8px;
+
+
+
+    .pricing {
+      background: #1c1033;
+      color: #fff;
+      padding: 80px 50px;
+      text-align: center;
     }
-.footer p{
-    margin:0; 
-    font-size:14px;
-    line-height: 2.9;
-}
-.copy{
-    text-align:left; 
-    border-top: #fff 1px solid;
-}
 
-.copy1{
-  float: right;
-}
+     .card img.mini-logo{
+      width: 100px;
+      align-items: center;
+      padding-left: 85px;
+     }
+
+
+     .pricing ul .r::before {
+      content: "✔ ";
+      color: #ff4081;
+      font-weight: bold;
+    }
+
+     .pricing ul .star-r::before {
+      content: "★ ";
+      color: #ff4081;
+      font-weight: bold;
+    }
+
+
+     .pricing ul .n::before {
+      content: "✔ ";
+      color: #2d3136;
+      font-weight: bold;
+    }
+
+     .pricing ul .star-n::before {
+      content: "★ ";
+      color: #2d3136;
+      font-weight: bold;
+    }
+
+     .pricing ul .x::before {
+      content: "✖ ";
+      color: #2d3136;
+      font-weight: bold;
+    }
+
+    .pricing h2 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .pricing p {
+      font-size: 16px;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: 0 auto 40px auto;
+    }
+
+    .pricing .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #fff;
+      color: #333;
+      padding: 30px;
+      border-radius: 10px;
+      width: 280px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .cards{
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card .price {
+      font-size: 26px;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+
+    .card .price span{
+      font-size: 14px;
+      color: #666;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 20px 0;
+      text-align: left;
+    }
+
+    .card ul li {
+      margin-bottom: 12px;
+      font-size: 15px;
+    }
+
+    .card button.ro {
+      background: #ff4081;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      font-weight: 600;
+      margin-top: auto;
+      cursor: pointer;
+    }
+    .card button {
+      background: #2d3136;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+ 
+
+
+    footer {
+      background: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  
